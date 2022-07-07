@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicee Game</title>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Splash&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--BOOTSTRAP-->
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/34df745cb7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--A0110 STYLES-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid align-center">
+      <button
+        type="button"
+        class="btn btn-outline-secondary a0110-roll-dice"
+        onClick="rollDice()"
+      >
+        Roll Dice
+      </button>
+    </div>
+
+    <div class="container-fluid align-center">
+      <div class="row">
+        <div id="left-container" class="col-md-6 col-lg-6 a0110-background-reset">
+          <h3 class="align-center left-dice">Player 1</h3>
+          <div class="left-dice">
+            <i id="dice-left" class="fa-solid fa-dice-six fa-10x"></i>
+          </div>
+        </div>
+        <div id="right-container" class="col-md-6 col-lg-6 a0110-background-reset">
+          <h3 class="align-center right-dice">Player 2</h3>
+          <div class="right-dice">
+            <i id="dice-right" class="fa-solid fa-dice-six fa-10x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row a0110-refresh-everything-margin">
+        <button
+          type="button"
+          class="btn btn-outline-secondary a0110-refresh-everything-button"
+          onClick="hardRefreshPage()"
+        >
+          Refresh Everyting
+        </button>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
