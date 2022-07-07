@@ -4,7 +4,7 @@ body {
 }
 
 .a0110-roll-dice {
-    margin: 5rem 5rem;
+    margin: 5rem 5rem 2rem 5rem;
     /* font-family: 'Splash', cursive; */
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
@@ -15,11 +15,11 @@ body {
 }
 
 .left-dice {
-    margin: 1rem 1rem 1rem 20%;
+    margin: 1rem 3rem;
 }
 
 .right-dice {
-    margin: 1rem 20% 1rem 1rem;
+    margin: 1rem 3rem;
 }
 
 .a0110-refresh-everything-button {

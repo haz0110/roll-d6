@@ -1,7 +1,7 @@
 function refreshPage() {
-    window.location.reload();
     document.getElementById("left-container").className = "col-md-6 col-lg-6 a0110-background-reset";
     document.getElementById("right-container").className = "col-md-6 col-lg-6 a0110-background-reset";
+    window.location.reload();
 }
 
 function hardRefreshPage() {
@@ -31,7 +31,6 @@ function rollDice() {
     var leftDice = document.querySelectorAll("#dice-left");
 
     var rightDiceRandomizer = Math.floor(Math.random() * 6 + 1);
-
     var leftDiceRandomizer = Math.floor(Math.random() * 6 + 1);
 
     document.getElementById("dice-right").className = "fa-solid fa-dice-" + integerToLiteral(rightDiceRandomizer) + " fa-10x";
